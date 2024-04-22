@@ -1,0 +1,18 @@
+//COLOR PALETTE
+
+$custom-green: rgb(21, 131, 76);
+$custom-violet: rgb(202, 143, 209);
+$custom-black: rgb(45, 45, 45);
+$custom-white: rgb(235, 227, 227);
+
+//FONT STACK
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$font-stack: "Roboto", sans-serif;
+
+//DOCUMENT FORMATTING
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

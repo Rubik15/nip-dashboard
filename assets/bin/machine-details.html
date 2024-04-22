@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/images/gen/favicon.ico">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Nip Dashboard System</title>
+</head>
+<body>
+    <header>
+        <img src="/assets/images/gen/logo.png" alt="nip">
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#">Ranking</a></li>
+                <li><a href="#">Docs</a></li>
+            </ul>
+        </nav>
+        <div class="login">
+            <a href="#">Profile</a>
+            <a href="#">Logout</a>
+        </div>
+    </header>
+    <div class="machine-details-page-container">
+        <div class="machine-detail-info-container">
+            <img src="/assets/images/machines/blockmould.png" alt="blockmould">
+            <div class="machine-detail-info">
+                <div class="machine-single-detail">
+                    <p class="detail-label">MACHINE ID: </p>
+                    <p class="detail-value">1262</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">ACTUAL RECIPE: </p>
+                    <p class="detail-value">IK1200X2000X1000</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">ACTUAL BATCH: </p>
+                    <p class="detail-value">LOT123456789</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">LOGGED OPERATOR: </p>
+                    <p class="detail-value">A. CENNAMO</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">QUANTITY TO DO: </p>
+                    <p class="detail-value">23</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">QUANTITY DONE: </p>
+                    <p class="detail-value">11</p>
+                </div>
+                <div class="machine-single-detail">
+                    <p class="detail-label">MACHINE STATE: </p>
+                    <p class="detail-value">ERROR</p>
+                </div>
+            </div>
+        </div>
+        <div class="machine-detail-other">
+            <div class="machine-detail-graph">
+                <header>
+                    <div class="datafilter">
+                        <label for="datefrom">From:</label>
+                        <input name="datefrom" type="date" class="graph-src" id="graph-src-from">
+                        <label for="datefrom">To:</label>
+                        <input name="datefrom" type="date" class="graph-src" id="graph-src-from">
+                        <button name="filter-bnt" class="graph-src-btn" id="graph-src-btn">Search</button>
+                    </div>
+                    <div class="graph-links">
+                        <a href="#"><img src="/assets/images/dev/expand.png" alt="fullview"></a>
+                        <a href="#"><img src="/assets/images/dev/print.png" alt="print"></a>
+                        <a href="#"><img src="/assets/images/dev/export.png" alt="export"></a>
+                    </div>
+                </header>
+                <p style="font-size: 5em; margin: 270px 140px;">QUI ANDRANNO I GRAFICI</p>
+            </div>
+            <div class="machine-detail-links">
+                <a href="#"><img src="/assets/images/dev/doc-icon.png" alt="docs"></a>
+                <a href="#"><img src="/assets/images/dev/alarm.png" alt="alarm-list"></a>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/js/machine.js"></script>
+</body>
+</html>

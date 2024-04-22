@@ -1,0 +1,164 @@
+@import 'config';
+@import 'components';
+
+body{
+    background-color: $custom-white;
+    font-family: $font-stack;
+}
+
+a{
+    text-decoration: none;
+    color: $custom-white;
+}
+
+li{
+    list-style: none;
+}
+
+header{
+    background-color: $custom-green;
+    height: 70px;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 20px;
+
+    img{
+        height: 55px;
+    }
+
+    ul{
+        width: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    a{
+        transition: font-weight .2s;
+    }
+
+    a:hover{
+        font-weight: bold;
+    }
+
+    .login{
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+//MACHINE PARK SECTION
+
+.machine-park{
+    margin: 10px;
+}
+
+//MACHINE DETAILS PAGES
+.machine-details-page-container{
+    display: flex;
+    padding: 20px 30px;
+}
+.machine-detail-info-container{
+    height: 800px;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    img{
+        height: 400px;
+    }
+    .machine-detail-info{
+        height: 400px;
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0px;
+        .machine-single-detail{
+            display: flex;
+            .detail-label{
+                width: 160px;
+                font-weight: bolder;
+            }
+            .detail-value{
+                font-style: italic;
+            }
+        }
+    }
+}
+.machine-detail-other{
+    height: 800px;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .machine-detail-graph{
+        height: 700px;
+        border: 1px solid black;
+        label{
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .graph-src{
+            height: 30px;
+            width: 160px;
+            font-size: 1.2em;
+            margin-right: 20px;
+            border: 0px;
+            padding: 0px 4px;
+            border-radius: 10px;
+        }
+        .graph-src:focus{
+            box-shadow: 5px 5px 10px $custom-violet;
+        } 
+        .graph-src-btn{
+            height: 25px;
+            width: 100px;
+            border: 0px;
+            background: $custom-white;
+            border-radius: 10px;
+            transition: background .5s;
+        }
+
+        .graph-src-btn:hover{
+            background: $custom-violet;
+            cursor: pointer;
+        }
+
+        img{
+            height: 35px;
+            width: 35px;
+            background-color: $custom-white;
+            padding: 3px;
+            border-radius: 10px;
+            opacity: .7;
+            margin: 0px 5px;
+            transition: opacity .7s, background-color .5s;
+        }
+        img:hover{
+            opacity: 1;
+            background-color: $custom-violet;
+        }
+    }
+    .machine-detail-links{
+        display: flex;
+        align-items: flex-end;
+        height: 80px;
+        img{
+            height: 45px;
+            width: 45px;
+            margin-right: 20px;
+            opacity: .7;
+            transition: opacity .5s;
+        }
+        img:hover{
+            opacity: 1;
+        }
+    }
+}

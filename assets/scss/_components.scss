@@ -1,0 +1,67 @@
+.machines-type-container{
+    height: 350px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid $custom-green;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px $custom-green ;
+    margin: 40px 0px;
+    padding: 0px 20px;
+    legend{
+        margin-left: 50px;
+        color: $custom-black;
+        font-weight: bold;
+    }
+}
+
+.machine-card{
+    background-color: rgba(76, 193, 141, 0.15);
+    color: $custom-black;
+    height: 300px;
+    width: 220px;
+    border: 1px solid $custom-black;
+    border-radius: 10px;
+    margin-right: 30px;
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: column;
+    resize: none;
+    &-title{
+        height: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-image{
+        height: 150px;
+        width: 220px;
+    }
+    &-recipe{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        margin: 5px 0px;
+        p{
+            font-weight: bold;
+            margin-right: 5px;
+        }
+    }
+    &-progress-bar{
+        height: 35px;
+        border: 1px solid $custom-black;
+        border-radius: 20px;
+        .machine-card-progression{
+            height: 33px;
+            width: 55%;
+            border-radius: 20px;
+            background-color: rgba(76, 193, 141, 1);
+            p{
+                position: relative;
+                top: 8px;
+                left: 95px;
+                font-weight: bold;
+            }
+        }
+    }
+}
